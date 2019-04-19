@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="http://kenwheeler.github.io/slick/slick/slick.js"></script>
+        <link href="css/base.css" type="text/css" rel="stylesheet"/>  
+        <link href="css/layout.css" type="text/css" rel="stylesheet"/>
+        <link href="css/main.css" type="text/css" rel="stylesheet"/>
+        <link href="css/sub.css" type="text/css" rel="stylesheet"/>
+        <title>통일연구원</title>
+
+    </head>
+    <body>
+        <?php include 'include/header.html'; ?>
+		
+		<div class="mainWrap">
+            <div class="subTitle">
+                <ul class="big">
+                    <li><img src="img/sub/title.png" alt="연구원안내"/><p>연구원안내</p></li> 
+                </ul>
+                <ul class="small">
+                    <li><img src="img/sub/home.png" alt="home"><p>>  연구원안내  >  연구원소개  >  설립목적/연혁</p></li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="lnb">
+                    <li>
+                        <a href="#" class="on">원장</a>
+                        <ul class="lnbSub" style="display:block;">
+                            <li><a href="#">역대원장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">연구원소개</a>
+                        <ul class="lnbSub">
+                            <li><a href="#">설립목적/연혁</a></li>
+                            <li><a href="#">비전 경영목표</a></li>
+                            <li><a href="#">홍보관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">참여안내</a>
+                        <ul class="lnbSub">
+                            <li><a href="#">연구과제제안</a></li>
+                            <li><a href="#">클린신고센터</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">부서소개</a>
+                        <ul class="lnbSub">
+                            <li><a href="#">기획조정실</a></li>
+                            <li><a href="#">통일정책연구실</a></li>
+                            <li><a href="#">북한연구실</a></li>                  
+                            <li><a href="#">평화연구실</a></li>                  
+                            <li><a href="#">인도협력연구실</a></li>                  
+                            <li><a href="#">경영지원실</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">찾아오시는 길</a>
+                    </li>
+                <script>               
+
+                $('.lnb>li>ul>li>a').on('mouseover', function(){
+                    $(this).addClass('on');
+                    $(this).parents().siblings().find('a').removeClass('on');
+                });
+
+                $('.lnb>li>ul>li>a').on('mouseout', function(){
+                    $(this).removeClass('on');
+                });
+
+                $('.lnb>li>a').on('click', function(){
+					$(this).addClass('on');
+                    $(this).parent().find('ul').show();
+                    $(this).parents().siblings().find('.lnbSub').hide();
+                });
+            </script>
+                </ul>                
+                <div class="content" id="idid">
+                    <div class="conTitle">
+                        <p>역대원장</p>
+                        <ul>
+                            <li><a href="#"><img src="img/sub/fb.png" alt="페이스북"></a></li>
+                            <li><a href="#"><img src="img/sub/twt.png" alt="트위터"></a></li>
+                            <li><a href="#"><img src="img/sub/fax.png" alt="프린트" style="padding: 7px 9px;"></a></li>
+                        </ul>
+                    </div>
+					<div class="con">
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/jnAdmAdmin/201810/61c921744c754319a2f56533c300a8e5_1540878388313.jpg" alt="16대 원장"/>
+							<div>
+								<p>제 16대 김연철 원장</p>
+								<p>金鍊鐵</p>
+								<p>Kim, Yeon Chul</p>
+								<p>2018년 4월 12일 ~ 2019년 3월 8일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/editor/201801/ed2a05937dc64c42b813c50b7651d5b7_1516340039061.jpg" alt="15대 원장"/>
+							<div>
+								<p>제 15대 손기웅 원장</p>
+								<p>孫基雄</p>
+								<p>Son, Gi Woong</p>
+								<p>2017년 3월 28일 ~ 2018년 1월 10일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/editor/201704/6cce21c5b4d34c71851460377ebbde30_1492747185779.jpg" alt="14대 원장"/>
+							<div>
+								<p>제 14대 최진욱 원장</p>
+								<p>崔鎭旭</p>
+								<p>Choi,Jin-Wook</p>
+								<p>2014년 3월 28일 ~ 2017년 3월 27일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/contentCrawler/201611/95fa2dc0640a44acb6002fe27fa38622_1478776796859.png" alt="13대 원장"/>
+							<div>
+								<p>제 13대 전성훈 원장</p>
+								<p>全星勳</p>
+								<p>Cheon,Seong-Whun</p>
+								<p>2013년 8월 12일 ~ 2014년 3월 6일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/editor/201703/cac0a20d12614ad9a4ed42c465b018cc_1490335138026.png" alt="12대 원장"/>
+							<div>
+								<p>제 12대 김동성 원장</p>
+								<p>金東成</p>
+								<p>Kim Dong Sung</p>
+								<p>2012년 12월 14일 ~ 2013년 2월 6일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/contentCrawler/201611/35a2bc266e064aa68debd3936b2c6c6c_1478776796863.png" alt="11대 원장"/>
+							<div>
+								<p>제 11대 김태우 원장</p>
+								<p>金泰宇</p>
+								<p>Kim Tae Woo</p>
+								<p>2011년 8월 8일 ~ 2012년 10월 22일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/contentCrawler/201611/8c1048602958497d905de0e239afc602_1478776796875.png" alt="10대 원장"/>
+							<div>
+								<p>제 10대 서재진 원장</p>
+								<p>徐載鎭</p>
+								<p>Suh Jae Jean</p>
+								<p>2008년 8월 8일 ~ 2011년 8월 7일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/contentCrawler/201611/f20493d6e6c7482a80367185872c22f1_1478776796880.png" alt="9대 원장"/>
+							<div>
+								<p>제 9대 이봉조 원장</p>
+								<p>李鳳朝</p>
+								<p>Lee Bong Jo</p>
+								<p>2007년 1월 18일 ~ 2008년 6월 5일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/contentCrawler/201611/731945f60d004d5986018d8e4b07a029_1478776796883.png" alt="8대 원장"/>
+							<div>
+								<p>제 8대 박영규 원장</p>
+								<p>朴英圭</p>
+								<p>Park Young-Kyu</p>
+								<p>2004년 1월 18일 ~ 2007년 1월 17일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/contentCrawler/201611/6261abcd48e44185a6de5bc648532dda_1478776796886.png" alt="7대 원장"/>
+							<div>
+								<p>제 7대 서병철 원장</p>
+								<p>徐丙喆</p>
+								<p>Seo Byung-Chul</p>
+								<p>2001년 1월 18일 ~ 2004년 1월 17일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/contentCrawler/201611/223055b45996493da39d231328f7f4bb_1478776796889.png" alt="6대 원장"/>
+							<div>
+								<p>제 6대 곽태환 원장</p>
+								<p>郭台煥</p>
+								<p>Kwak Tae-Hwan</p>
+								<p>1999년 7월 6일 ~ 2000년 12월 16일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/contentCrawler/201611/d853717ef92b45378d522a083ae94926_1478776796892.png" alt="5대 원장"/>
+							<div>
+								<p>제 5대 양영식 원장</p>
+								<p>梁榮植</p>
+								<p>Yang Young-Shik</p>
+								<p>1998년 4월 16일 ~ 1999년 5월 25일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/contentCrawler/201611/765c52403edd4566965d1679a7c6dc2c_1478776796896.png" alt="3,4대 원장"/>
+							<div>
+								<p>제 3,4대 정세현 원장</p>
+								<p>丁世鉉</p>
+								<p>Jeong Se Hyun</p>
+								<p>1996년 12월 18일 ~ 1998년 3월 9일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+						<div class="director">
+							<img src="http://kinu.or.kr/jnrepo/upload/contentCrawler/201611/3fc962e23ac0487fa5b2b5afe0e27b96_1478776796899.png" alt="1,2대 원장"/>
+							<div>
+								<p>제 1,2대 이병용 원장</p>
+								<p>李秉龍</p>
+								<p>Lee Byoung-Yong</p>
+								<p>1991년 1월 3일 ~ 1996년 12월 18일</p>
+								<a href="#">프로필 보기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php include 'include/subfooter.html'; ?>
+        
+        <?php include 'include/footer.html'; ?>
+    </body>
+
+</html>

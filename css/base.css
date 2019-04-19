@@ -1,0 +1,10 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*       {margin: 0; padding: 0; border-style: none; font-family: "Nanum Gothic", sans-serif;}
+li      {list-style: none;}
+img     {border: 0;}
+caption, legend     {width: 0; height: 0; font-size: 0; line-height: 0; overflow: hidden;}
+button      {cursor: pointer;}
+table       {width: 100%; border-collapse: collapse;}
+a       {text-decoration: none;}
+a:hover, a:focus        {text-decoration: underline;}
+caption	{display: none;}

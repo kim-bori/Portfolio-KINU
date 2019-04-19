@@ -1,0 +1,309 @@
+<div class="skipNavigation">
+    <a href="#idid">메뉴건너뛰기</a>
+</div>
+<div class="header">
+            <div class="topWrap">
+                <div class="top">
+                    <a href="#" class="home"><img src="img/layout/home.png" alt="home"/></a>
+                    <a href="#">아이핀 인증</a>
+                    <a href="#" style="float:right;">ENGLISH</a>
+                    <a href="#" style="float:right;">사이트맵</a>
+                </div>
+            </div>
+            <div class="head">
+                <a href="#" class="logo"><img src="img/layout/logo.png" alt="kinu통일연구원"/></a>
+                <div class="search">
+                    <form method="post" action="#a" style="display: inline-block;">
+                        <fieldset class="search_form">
+                            <input type="text" title="검색어 입력란" value="검색어 입력란" id="ipID"/><label for="ipID"></label>
+                            <button><img src="img/layout/search.png" alt="검색"/></button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="menu_R">
+                    <a href="#"><img src="img/layout/menu_R.png" alt="상세검색"></a>
+                </div>
+                <!--상세검색 창-->
+                <div class="menu_pop">
+                <div class="pop_top">상세검색<p><img src="img/layout/close.png" alt="닫기" class="close"></p></div>
+                <form method="post" action="#a">
+                    <div class="con_top">
+                        <label for="search">검색어</label>
+                        <input type="text" class="keyword" title="검색어" value="" id="search"/>
+                        <input type="radio" title="and" value="" name="rad" id="rad1"/><label for="rad1">AND</label>
+                        <input type="radio" title="or" value="" name="rad" id="rad2"/><label for="rad2">OR</label>
+                    </div>
+                    <div class="con_main">                        
+                        <div class="fil_box">
+                            <div class="box">
+                                <fieldset style="border-style: none;">
+                                    <ul class="boxList">
+                                        <li>
+                                            <strong>검색대상</strong>
+                                            <p><input type="checkbox" title="전체" value="" name="chk" id="chk1"/><label for="chk1">전체</label></p>
+                                            <p><input type="checkbox" title="전체" value="" name="chk" id="chk2"/><label for="chk2">KINU연구</label></p>
+                                            <p><input type="checkbox" title="전체" value="" name="chk" id="chk3"/><label for="chk3">자료실</label></p>
+                                            <p><input type="checkbox" title="전체" value="" name="chk" id="chk4"/><label for="chk4">연구원소식</label></p>
+                                            <p><input type="checkbox" title="전체" value="" name="chk" id="chk5"/><label for="chk5">연구원안내</label></p>
+                                            <p><input type="checkbox" title="전체" value="" name="chk" id="chk6"/><label for="chk6">정부3.0</label></p>
+                                        </li>
+                                        <li>
+                                            <strong>검색영역</strong>
+                                            <p><input type="radio" title="전체" value="" name="rad" id="rad3"/><label for="rad3">전체</label></p>
+                                            <p><input type="radio" title="제목" value="" name="rad" id="rad4"/><label for="rad4">제목</label></p>
+                                            <p><input type="radio" title="저자" value="" name="rad" id="rad5"/><label for="rad5">저자</label></p>
+                                            <p><input type="radio" title="내용" value="" name="rad" id="rad6"/><label for="rad6">내용</label></p>
+                                            <p><input type="radio" title="첨부파일" value="" name="rad" id="rad7"/><label for="rad7">첨부파일</label></p>
+                                        </li>
+                                        <li>
+                                            <strong>검색기간</strong>
+                                            <p><input type="radio" title="전체" value="" name="rad" id="rad8"/><label for="rad8">전체</label></p>
+                                            <p><input type="radio" title="최근 1주일" value="" name="rad" id="rad9"/><label for="rad9">최근 1주일</label></p>
+                                            <p><input type="radio" title="최근 3주일" value="" name="rad" id="rad10"/><label for="rad10">최근 3주일</label></p>
+                                            <p><input type="radio" title="기간설정" value="" name="rad" id="rad11"/><label for="rad11">기간설정</label></p>
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="btn_box">
+                            <p class="btn">
+                                <a href="#" class="btL">검색</a>
+                                <a href="#" class="btR">닫기</a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="dimm"></div>
+                <script>
+                    $('.menu_R').on('click', function(){
+                        $('.menu_pop').slideDown();
+                        $('.dimm').fadeIn();                        
+                    });
+                    
+                    $('.btR').on('click', function(){
+                        $('.menu_pop').slideUp();
+                        $('.dimm').fadeOut(); 
+                    });
+                    $('.close').on('click', function(){
+                        $('.menu_pop').slideUp();
+                        $('.dimm').fadeOut(); 
+                    });
+                </script>
+            </div>
+            <div class="gnbWrap">
+                <ul class="gnb">
+                    <li>
+                        <a href="#">KINU연구</a>
+                        <div class="gnb_sub">
+                            <p>KINU 연구</p>
+                            <ul>
+                                <li class="menu">
+                                    <a href="#">주제별</a>
+                                    <ul>
+                                        <li><a href="#">남북관계</a></li>
+                                        <li><a href="#">통일</a></li>
+                                        <li><a href="#">북한</a></li>
+                                        <li><a href="#">국제관계</a></li>
+                                        <li><a href="#">북한인권</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">종류별</a>
+                                    <ul>
+                                        <li><a href="#">연구보고서</a></li>
+                                        <li><a href="#">현안분석</a></li>
+                                        <li><a href="#">정기간행물</a></li>                  
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">사업소개</a>
+                                    <ul>
+                                        <li><a href="#">기본연구사업</a></li>
+                                        <li><a href="#">일반사업</a></li>
+                                        <li><a href="#">협동연구사업</a></li>                  
+                                    </ul>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">자료실</a>
+                        <div class="gnb_sub">
+                            <p>자료실</p>
+                            <ul>
+                                <li class="menu">
+                                    <a href="#">국내자료</a>
+                                    <ul>
+                                        <li><a href="#">전체자료</a></li>
+                                        <li><a href="#">국내기관</a></li>
+                                        <li><a href="#">정기간행물</a></li>
+                                        <li><a href="#">정책자료</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">북한자료</a>
+                                    <ul>
+                                        <li><a href="#">김일성 저작집</a></li>
+                                        <li><a href="#">김정일 선집</a></li>
+                                        <li><a href="#">정기간행물</a></li>                  
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">해외자료</a>
+                                    <ul>
+                                        <li><a href="#">해외기관</a></li>
+                                        <li><a href="#">국제기구</a></li>
+                                    </ul>
+                                </li>        
+                                <li class="menu">
+                                    <a href="#">통일부 발간자료</a>
+                                    <ul></ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">통계자료</a>
+                                    <ul>
+                                        <li><a href="#">북한발표</a></li>
+                                        <li><a href="#">KINU국민통일여론</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">관련기관URL</a>
+                                    <ul>
+                                        <li><a href="#">국내기관 URL</a></li>
+                                        <li><a href="#">해외기관 URL</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">연구원소식</a>
+                        <div class="gnb_sub">
+                            <p>연구원소식</p>
+                            <ul>
+                                <li class="menu">
+                                    <a href="#">공지사항</a>
+                                    <ul>
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">채용안내</a></li>
+                                        <li><a href="#">회원MOU 체결기관</a></li>
+                                        <li><a href="#">연구개발과제 현황</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">보도자료</a>
+                                    <ul>
+                                        <li><a href="#">보도자료</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">언론기고</a>
+                                    <ul>
+                                        <li><a href="#">언론기고</a></li>  
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">행사</a>
+                                    <ul>
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">국제회의</a></li>
+                                        <li><a href="#">국내회의</a></li>                  
+                                        <li><a href="#">기타</a></li>                  
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">해외출장</a>
+                                    <ul>
+                                        <li><a href="#">원장 및 임원</a></li>
+                                        <li><a href="#">직원</a></li>
+                                    </ul>
+                                </li>   
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">연구원안내</a>
+                        <div class="gnb_sub">
+                            <p>연구원안내</p>
+                            <ul>
+                                <li class="menu">
+                                    <a href="#">원장</a>
+                                    <ul>
+                                        <li><a href="#">역대원장</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">연구원소개</a>
+                                    <ul>
+                                        <li><a href="#">설립목적/연혁</a></li>
+                                        <li><a href="#">비전 경영목표</a></li>
+                                        <li><a href="#">홍보관</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">참여안내</a>
+                                    <ul>
+                                        <li><a href="#">연구과제제안</a></li>  
+                                        <li><a href="#">클린신고센터</a></li>  
+                                        <li><a href="#">Q&A</a></li>  
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">부서소개</a>
+                                    <ul>
+                                        <li><a href="#">기획조정실</a></li>
+                                        <li><a href="#">통일정책연구실</a></li>
+                                        <li><a href="#">북한연구실</a></li>                  
+                                        <li><a href="#">평화연구실</a></li>                  
+                                        <li><a href="#">인도협력연구실</a></li>                  
+                                        <li><a href="#">경영지원실</a></li>                  
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">찾아오시는 길</a>
+                                    <ul></ul>
+                                </li>   
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">정보공개</a>
+                        <div class="gnb_sub">
+                            <p>정보공개</p>
+                            <ul>
+                                <li class="menu">
+                                    <a href="#">정보공개</a>
+                                    <ul>
+                                        <li><a href="#">정보공개제도 안내</a></li>
+                                        <li><a href="#">사전정보공표등록</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">경영공시</a>
+                                    <ul></ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">공공데이터 개방</a>
+                                    <ul></ul>
+                                </li>
+                                <li class="menu">
+                                    <a href="#">사업실명제</a>
+                                    <ul></ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        <script>
+            $('.header .gnb>li>a').on('mouseover', function(){
+                $(this).next().show();
+                $(this).parents().siblings().find('.gnb_sub').hide();
+            });
+            $('.header .gnb>li').on('mouseleave', function(){
+                $(this).find('div').hide();
+            });
+        </script>
+        </div>
