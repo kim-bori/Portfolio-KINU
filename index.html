@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="http://kenwheeler.github.io/slick/slick/slick.js"></script>
+        <title>통일연구원</title>
+        <link href="css/main.css" type="text/css" rel="stylesheet"/>        
+        <link href="css/layout.css" type="text/css" rel="stylesheet"/>
+        <link href="css/base.css" type="text/css" rel="stylesheet"/>  
+
+    </head>
+    <body>
+        <?php include 'include/header.html'; ?>
+        
+        <div class="mainWrap">
+            <div class="mainCon1">
+                <div class="Con1Left">
+                    <div class="slick">
+                        <div><a href="#"><img src="img/main/people1.png" alt="통일정책연구협의회 의장단 회의"/><span><strong>통일정책연구협의회 의장단회의</strong>2016.07.13</span></a></div>
+                        <div><a href="#"><img src="img/main/people2.png" alt="북한인권 실태 및 정책회의"/><span><strong>북한인권 실태 및 정책회의</strong>2016.08.15</span></a></div>
+                        <div><a href="#"><img src="img/main/people3.png" alt="DMZ의 평화적 이용"/><span><strong>DMZ의 평화적 이용</strong>2016.09.21</span></a></div>
+                        <div><a href="#"><img src="img/main/people4.png" alt="한국석좌 방원워크숍"/><span><strong>한국석좌 방원워크숍</strong>2016.10.06</span></a></div>
+                    </div>                    
+                        <button type="button" class="slick-pause slick-arrow" aria-label="Pause" style="display: block;">Pause</button>
+                </div>
+                <script>
+                    $('.Con1Left .slick').slick({
+                        autoplay:true,
+                        autoplayspeed:5000,
+                        arrow:false,
+                        dots:true
+                    });
+                    
+                    $('.slick-pause').on('click', function(){
+                        if($(this).hasClass('play')){
+                            $('.Con1Left .slick').slick('slickPlay');
+                            $(this).removeClass('play')
+                        }else{
+                            $('.Con1Left.slick').slick('slickPause');
+                            $(this).addClass('play');
+                        }
+                    });
+                </script>
+                <ul class="Con1Right">
+                    <li>
+                        <a href="#">
+                            <span class="tit">북한인권 실태 및 정책회의</span>
+                            <span class="text">통일연구원은 2016년 7월 18일(월), 롯데호텔 사파이어볼룸에서 "북한인권 실태 파악 및 효과적 북한인권정책 도출"을 주제로 북한인권 실태 및 정책회의를 개최하였다.</span>
+                            <span class="date">2016.07.18</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="tit">통일연구원 통일정책연구협의회 운영위원회 회의 개최</span>
+                            <span class="text">통일연구원은 2016년 7월 13일(수), 롯데호텔에서 통일정책연구협의회 의장단회의를 개최하였다.</span>
+                            <span class="date">2016.07.13</span>
+                        </a>
+                    </li><li>
+                        <a href="#">
+                            <span class="tit">대북제재 이후의 북중교역, 다각적 검토가 필요하다</span>
+                            <span class="text">북중교역, 특히 북한의 대중수출은 대북제재의 실효성을 가늠하는 시금석이 되고 있다. 매월 하순 중국 해관에서 북중교역 통계가 발표될 때마다 언론과 연구자들은 촉각을 곤두세우곤 한다.</span>
+                            <span class="date">2016.07.11</span>
+                        </a>
+                    </li><li>
+                        <a href="#">
+                            <span class="tit">사드 배치 결정 이후 한반도 정세 및 대응 방안</span>
+                            <span class="text">한미 양국은 7월 8일 “주한미군에 高고도미사일방어체계(THAAD. 사드)를 배치하기로 결정했다”고 발표함</span>
+                            <span class="date">2016.07.08</span>
+                        </a>
+                    </li>                   
+                </ul>
+            </div>
+            <div class="mainCon2">
+                <div class="Con2">
+                    <div class="slide">
+                        <div>
+                            <a href="#">
+                                <span class="report_img"><img src="http://www.kinu.or.kr/jnrepo/upload/jnPrgPopupBanner/201902/d8ff7e844d0e4340bf8361b9cb02527b_1551145245110.JPG" alt="동북아 플러스 책임공동체 형성 방안"></span>
+                                <span class="report_tit">동북아 플러스 책임공동체 형성 방안</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span class="report_img"><img src="http://www.kinu.or.kr/jnrepo/upload/jnPrgPopupBanner/201903/b58b5f6801934492a0e1c83117b3f607_1551682137320.JPG" alt="북핵 종합평가와 한반도 비핵화 촉진전략"/></span>
+                                <span class="report_tit">북핵 종합평가와 한반도 비핵화 촉진전략</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span class="report_img"><img src="http://www.kinu.or.kr/jnrepo/upload/jnPrgPopupBanner/201903/56d38f01322c4687998d9daa9cec3bb0_1551682097721.JPG" alt="대북 제재 현황과 완화 전망"/></span>
+                                <span class="report_tit">대북 제재 현황과 완화 전망</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span class="report_img"><img src="http://www.kinu.or.kr/jnrepo/upload/jnPrgPopupBanner/201902/6fc85d22b517490f8e6a8545f698d772_1551234788092.JPG" alt="한반도 평화번영과 남북중 협력방안"/></span>
+                                <span class="report_tit">한반도 평화번영과 남북중 협력방안</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span class="report_img"><img src="http://www.kinu.or.kr/jnrepo/upload/jnPrgPopupBanner/201902/d8ff7e844d0e4340bf8361b9cb02527b_1551145245110.JPG" alt="동북아 플러스 책임공동체 형성 방안"/></span>
+                                <span class="report_tit">동북아 플러스 책임공동체 형성 방안</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span class="report_img"><img src="http://www.kinu.or.kr/jnrepo/upload/jnPrgPopupBanner/201903/b58b5f6801934492a0e1c83117b3f607_1551682137320.JPG" alt="북핵 종합평가와 한반도 비핵화 촉진전략"/></span>
+                                <span class="report_tit">북핵 종합평가와 한반도 비핵화 촉진전략</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span class="report_img"><img src="http://www.kinu.or.kr/jnrepo/upload/jnPrgPopupBanner/201903/56d38f01322c4687998d9daa9cec3bb0_1551682097721.JPG" alt="대북 제재 현황과 완화 전망"/></span>
+                                <span class="report_tit">대북 제재 현황과 완화 전망</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span class="report_img"><img src="http://www.kinu.or.kr/jnrepo/upload/jnPrgPopupBanner/201902/6fc85d22b517490f8e6a8545f698d772_1551234788092.JPG" alt="한반도 평화번영과 남북중 협력방안"/></span>
+                                <span class="report_tit">한반도 평화번영과 남북중 협력방안</span>
+                            </a>
+                        </div>
+                    </div>
+                    <script>
+                            $('.Con2 .slide').slick({
+                                slidesToShow: 4,
+                                arrows: true,
+                                autoplay: false
+                            });
+                    </script>
+                </div>
+            </div>
+            <div class="mainCon3">
+                <div class="mainCon3T">
+                    <div class="Con3TB1">
+                        <p class="Con3TB_tit">KINU 연구</p>
+                        <ul class="Con3TB1ul">
+                            <li>
+                                <a href="#" class="active" onclick="return false;">연구보고서</a>
+                                <div class="Con3TB_text" style="display: block;">
+                                    <ul>
+                                        <li><a href="#" onclick="return false;">2030 미중관계 시나리오와 한반도</a><span>2018</span></li>
+                                        <li><a href="#" onclick="return false;">중국 시진핑 2기 지도부 구성과 대외정책 전망</a><span>2018</span></li>
+                                        <li><a href="#" onclick="return false;">한반도 평화번영과 남북중 협력방안</a><span>2018</span></li>
+                                        <li><a href="#" onclick="return false;">북한 군사경제 비대화의 원인과 실태</a><span>2018</span></li>
+                                        <li><a href="#" onclick="return false;">김정은 시대 북한의 국가기구와 국가성</a><span>2018</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false;">현안분석</a>
+                                <div class="Con3TB_text">
+                                    <ul>
+                                        <li><a href="#" onclick="return false;">신한반도체제의 개념과 추진방향</a><span>2019-03-13</span></li>
+                                        <li><a href="#" onclick="return false;">제2차 북미정상회담 평가와 향후 과제</a><span>2019-03-07</span></li>
+                                        <li><a href="#" onclick="return false;">북미정상회담의 '컨벤션 효과'와 '무역외수지'</a><span>2019-02-21</span></li>
+                                        <li><a href="#" onclick="return false;">북한의 유엔 장애인권리협약 이행 최초보고서</a><span>2019-01-29</span></li>
+                                        <li><a href="#" onclick="return false;">김정은 위원장은 중국에서 무엇을 보았나?</a><span>2019-01-21</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false;">정기간행물</a>
+                                <div class="Con3TB_text">
+                                    <ul>
+                                        <li><a href="#" onclick="return false;">International Journal of Korean Unification Studies 2018 vol.27 no.2</a><span>2018-12-31</span></li>
+                                        <li><a href="#" onclick="return false;">통일정책연구 2018, Vol.27 Iss.2</a><span>2018-12-30</span></li>
+                                        <li><a href="#" onclick="return false;">통일정책연구 2018, Vol.27 Iss.1</a><span>2018-06-30</span></li>
+                                        <li><a href="#" onclick="return false;">International Journal of Korean Unification Studies 2018 vol.27 no.1</a><span>2018-06-30</span></li>
+                                        <li><a href="#" onclick="return false;">International Journal of Korean Unification Studies 2017 vol.26 no.2</a><span>2017-12-31</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        <script>
+                            $('.mainCon3T .Con3TB1 .Con3TB1ul li a').on('click', function(){
+                                $(this).addClass('active').next().show().parent().siblings().find('a').removeClass('active');
+                                $(this).parent().siblings().find('div').hide();
+                            });
+                        </script>
+                        </ul>
+                    </div>
+                    <div class="Con3TB2">
+                        <p class="Con3TB_tit">연구원 소식</p>
+                        <ul class="Con3TB2ul">
+                            <li>
+                                <a href="#" class="active" onclick="return false;">공지사항</a>
+                                <div class="Con3TB_text" style="display: block;">
+                                    <ul>
+                                         <li><a href="#">[채용] 2019년 육아휴직대체(연구원, 행정원) 최종합격자 안내</a><span>2019.04.05</span></li>
+                                         <li><a href="#">19년 국민참여예산 사업제안 집중 접수 기간 안내 알림</a><span>2019.04.05</span></li>
+                                        <li><a href="#">[채용] 2019년 정규직 연구원 공개채용 2차 필기전형 합격자 안내 (2월 21일자 공고문)</a><span>2019.04.05</span></li>
+                                        <li><a href="#">[채용] 2019년 정규직 연구원 공개채용 1차 서류전형 합격자 안내 (2월 21일자 공고문)</a><span>2019.03.27</span></li>
+                                        <li><a href="#">[채용] 2019년 육아휴직대체(연구원, 행정원) 서류전형 합격자 안내</a><span>2019.03.26</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false;">웹진</a>
+                                <div class="Con3TB_text">
+                                    <ul>
+                                        <li><a href="#">통일정책연구 2019년 제28권 1호 원고 모집</a><span>2019.03.19</span></li>
+                                        <li><a href="#">[Call for Papers] 2019 IJKUS Vol.28 No.1</a><span>2019.03.18</span></li>
+                                        <li><a href="#">영문논총(IKUS) 2019년 제28권 1호 원고 공모</a><span>2019.03.18</span></li>
+                                        <li><a href="#">[Online Series | CO19-06] The Concept and Direction of the New Korean Peninsula Regime</a><span>2019.03.18</span></li>
+                                        <li><a href="#">[통일연구원] 정규직 부연구위원 채용(연장) 공고</a><span>2019.03.15</span></li>
+                                    </ul>
+                                </div>                           
+                            </li>
+                        <script>
+                            $('.mainCon3T .Con3TB2 .Con3TB2ul li a').on('click', function(){
+                                $(this).addClass('active').next().show().parent().siblings().find('a').removeClass('active');
+                                $(this).parent().siblings().find('div').hide();
+                            });
+                        </script>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mainCon3B">
+                    <div class="Con3B1">
+                        <ul class="ico">
+                            <li>
+                                <a href="#"><img src="img/main/ico-1-go-.png" alt="웹진신청"></a>
+                                <p>웹진신청</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/main/ico-2-go-.png" alt="도서회원"></a>
+                                <p>도서회원</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/main/ico-3-go-.png" alt="전자도서관"></a>
+                                <p>전자도서관</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/main/ico-4-go-.png" alt="오시는길"></a>
+                                <p>오시는 길</p>
+                            </li>
+                        </ul>
+                        <ul class="ban1" style="height: 95px;">
+                            <li><a href="#"><img src="img/main/ban1.png" alt="통일염원메세지"></a></li>
+                        </ul>
+                        <ul class="ban2" style="height: 94px;">
+                            <li><a href="#"><img src="img/main/ban2.png" alt="통일정책연구협의회"></a></li>
+                        </ul>                        
+                    </div>
+                    <script>
+                        $('.Con3B1 .ico a').on('mouseover', function(){                          $(this).find('img').attr('src',$(this).find('img').attr('src').replace(/-go/,'-go-w'));
+                         $(this).addClass('active');
+                        });
+                        
+                        $('.Con3B1 .ico a').on('mouseout',function(){                            $(this).find('img').attr('src',$(this).find('img').attr('src').replace(/-go-w/,'-go'));
+                         $(this).removeClass('active');                                        
+                        })  
+                    </script>
+                    <div class="Con3B2">
+                        <div class="sns" style="margin-bottom: 6px;">
+                            <a href="#"><img src="img/main/fb.png" alt="페이스북"></a>
+                            <a href="#"><img src="img/main/yt.png" alt="유튜브"></a>
+                        </div>
+                        <div class="feed">
+                            <ul>
+                            <li><img src="img/main/feed.png" alt="페이스북 글">
+                            <p>[통일나침반]<br>본 보고서는 한미의 사드 배치 결정 이후 주변국의 반응과 북한의 예상 반응 및 한반도 정세에 대한 영향을 분석한 후, 향후 우리정부의 대응 방안을 제시하고자 하였습니다.<br><br>본 보고서의 전문은 아래 링크에서 다운로드 받으실 수 있습니다.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Con3B3">
+                        <a href="#"><img src="img/main/promotion.png" alt="통일연구원 개원 24주년 기념식"></a>
+                    </div>
+                </div>                          
+                <div class="banner">
+                    <p>관련사이트</p>
+                    <div class="rolling">
+                        <div><a href="#"><img src="img/main/roll1.png" alt="국민권익위원회"></a></div>
+                        <div><a href="#"><img src="img/main/roll2.png" alt="정책정보포털"></a></div>
+                        <div><a href="#"><img src="img/main/roll3.png" alt="안전신문고"></a></div>
+                        <div><a href="#"><img src="img/main/roll4.png" alt="국방헬프콜"></a></div>
+                        <div><a href="#"><img src="img/main/roll5.png" alt="통일과법률"></a></div>
+                        <div><a href="#"><img src="img/main/roll6.png" alt="국가정책연구포털"></a>
+                        </div>
+                        <div><a href="#"><img src="img/main/roll7.jpg" alt="채용비리 통합신고센터"></a>
+                        </div>
+                    </div>
+                    <button class="slick-pause slick-arrow">Pause</button>        
+                </div>
+                <script>
+                    $('.banner .rolling').slick({
+                        autoplay: true,
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        autoplayspeed: 10,
+                        speed: 4000,
+                        pauseOnHover: true,
+                        cssEase: 'linear'
+                    });
+
+                    $('.banner .slick-pause').on('click', function(){                       
+                      $('.banner .rolling').slick('slickPause')
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="footerWrap">
+            <div class="footer">
+                <ul class="ftMenu">
+                <li><a href="#" style="color: #0f56ab;">개인정보처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">오시는길</a></li>
+                </ul>
+                <span>(우.06578) 서울특별시 서초구 반포대로 217 통일연구원   TEL : 02)2023-8000  Email : webmaster@kinu.or.kr<br>Copyright(c) 2016 KINU. All rights Reserved.</span>
+                <div class="family">
+                    <form method="post" action="#a">
+                        <fieldset class="family_select">
+                            <select name="fm" title="fa" class="select">
+                                <option value="" selected="selected">Family Site</option>
+                                <option value="">선생님바보</option>
+                            </select>
+                            <a href="#">이동</a>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
+
