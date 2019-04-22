@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="http://kenwheeler.github.io/slick/slick/slick.js"></script>
+        <title>통일연구원</title>
+        <link href="css/main.css" type="text/css" rel="stylesheet"/>        
+        <link href="css/layout.css" type="text/css" rel="stylesheet"/>
+        <link href="css/base.css" type="text/css" rel="stylesheet"/>
+        <link href="css/sub.css" type="text/css" rel="stylesheet"/> 
+
+    </head>
+    <body>
+        <?php include 'include/header.html'; ?>
+        
+        <div class="mainWrap">
+            <div class="subTitle">
+                <ul class="big">
+                    <li><img src="img/sub/title.png" alt="연구원안내"/><p>연구원안내</p></li> 
+                </ul>
+                <ul class="small">
+                    <li><img src="img/sub/home.png" alt="home"><p>>  연구원안내  >  연구원소개  >  설립목적/연혁</p></li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="lnb">
+                    <li>
+                        <a href="#" class="on">원장</a>
+                        <ul class="lnbSub" style="display:block;">
+                            <li><a href="#">역대원장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">연구원소개</a>
+                        <ul class="lnbSub">
+                            <li><a href="#">설립목적/연혁</a></li>
+                            <li><a href="#">비전 경영목표</a></li>
+                            <li><a href="#">홍보관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">참여안내</a>
+                        <ul class="lnbSub">
+                            <li><a href="#">연구과제제안</a></li>
+                            <li><a href="#">클린신고센터</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">부서소개</a>
+                        <ul class="lnbSub">
+                            <li><a href="#">기획조정실</a></li>
+                            <li><a href="#">통일정책연구실</a></li>
+                            <li><a href="#">북한연구실</a></li>                  
+                            <li><a href="#">평화연구실</a></li>                  
+                            <li><a href="#">인도협력연구실</a></li>                  
+                            <li><a href="#">경영지원실</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">찾아오시는 길</a>
+                    </li>
+                <script>
+               
+                $('.lnb>li>ul>li>a').on('mouseover', function(){
+                    $(this).addClass('on');
+                    $(this).parents().siblings().find('a').removeClass('on');
+                });
+
+                $('.lnb>li>ul>li>a').on('mouseout', function(){
+                    $(this).removeClass('on');
+                });
+
+                $('.lnb>li>a').on('click', function(){
+                    $(this).addClass('on');
+                    $(this).parent().find('ul').show();
+                    $(this).parents().siblings().find('.lnbSub').hide();
+                });
+            </script>
+                </ul>                
+                <div class="content" id="idid">
+                    <div class="conTitle">
+                        <p>보고서 게시판 B - View</p>
+                        <ul>
+                            <li><a href="#"><img src="img/sub/fb.png" alt="페이스북"></a></li>
+                            <li><a href="#"><img src="img/sub/twt.png" alt="트위터"></a></li>
+                            <li><a href="#"><img src="img/sub/fax.png" alt="프린트" style="padding: 7px 9px;"></a></li>
+                        </ul>
+                    </div>
+                    <div class="con">
+                        <div class="menuBox">
+                            <ul>
+                                <li><a href="#">대북정책</a></li>
+                                <li><a href="#">교류협력</a></li>
+                                <li><a href="#">군사안보</a></li>
+                                <li><a href="#">평화체제</a></li>
+                                <li><a href="#">회담·합의</a></li>
+                                <li><a href="#">일반</a></li>
+                            </ul>
+                            <script>
+                                $('.menuBox ul li a').on('mouseover', function(){
+                                    $(this).addClass('on');
+                                    $(this).parents().siblings().find('a').removeClass('on');
+                                });
+
+                                $('.menuBox ul li a').on('mouseout', function(){
+                                    $(this).removeClass('on');
+                                });
+                               
+                            </script>
+                        </div>
+                        <div class="viewTitle">
+                            <p>대북정책</p>
+                        </div>
+                        <div class="view">
+                            <ul>
+                                <li><img src="img/sub/img.png" alt="Inter-Korean Relations and the Unification Process.."/></li>
+                                <li class="text">
+                                <strong class="tit">Inter-Korean Relations and the Unification Process..</strong>
+                                <strong>Jong-Chul Park and Joseph Harte</strong>
+                                <p>2016-03-25 / 404 p.</p>
+                                <span>This year marks the 70th anniversary of Korea’s liberation from Japanese occupation. At the same ti ...</span></li>
+                            </ul>
+                        </div>
+                        <div class="board">
+                            <div class="top">
+                                <div class="page">
+                                    총: <p>500</p>건<span> | 페이지수: 1/50</span>
+                                </div>
+                                <div class="search">
+                                    <select name="fm" title="fa" class="select">
+                                        <option value="" selected="selected">제목</option>
+                                        <option value="">내용</option>
+                                        <option value="">작성자</option>
+                                        <option value="">제목+내용</option>
+                                    </select>
+                                    <input type="text" class="keyword" title="검색어" value="" id="search"/>
+                                    <button>검색</button>
+                                </div>
+                            </div>
+                            <div class="bot">
+                                <table>
+									<caption>보고서게시판 목록</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">서명</th>
+                                            <th scope="col">발행일</th>
+                                            <th scope="col">저자</th>
+                                            <th scope="col">원문</th>
+                                            <th scope="col">조회</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>3228</td>
+                                            <td>신임 간부진 임명식</td>
+                                            <td>2016-06-28</td>
+                                            <td>박주화</td>
+                                            <td></td>
+                                            <td>357</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3227</td>
+                                            <td>[제8회 KINU 서초포럼] 참석</td>
+                                            <td>2016-06-24</td>
+                                            <td>박영자</td>
+                                            <td></td>
+                                            <td>705</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3226</td>
+                                            <td>[미의회 중국이윈회 대표단 방원워크숍] 참석</td>
+                                            <td>2016-06-21</td>
+                                            <td>정성윤</td>
+                                            <td></td>
+                                            <td>468</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3225</td>
+                                            <td>신임 간부진 임명식</td>
+                                            <td>2016-06-17</td>
+                                            <td>한승수</td>
+                                            <td></td>
+                                            <td>257</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3224</td>
+                                            <td>신임 간부진 임명식</td>
+                                            <td>2016-06-15</td>
+                                            <td>박주화</td>
+                                            <td></td>
+                                            <td>169</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3223</td>
+                                            <td>해외언론인 방원인터뷰</td>
+                                            <td>2016-06-11</td>
+                                            <td>박영자</td>
+                                            <td></td>
+                                            <td>246</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3222</td>
+                                            <td>[북한인권 실태 및 정책회의] 참석</td>
+                                            <td>2016-06-07</td>
+                                            <td>정성윤</td>
+                                            <td></td>
+                                            <td>102</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3221</td>
+                                            <td>[KAIST NERIEC 방원워크숍] 참석</td>
+                                            <td>2016-06-02</td>
+                                            <td>한승수</td>
+                                            <td></td>
+                                            <td>237</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3220</td>
+                                            <td>[통일정책연구협의회 운영위원회 회의] 참석</td>
+                                            <td>2016-05-27</td>
+                                            <td>박주화</td>
+                                            <td></td>
+                                            <td>569</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3219</td>
+                                            <td>[통일정책연구협의회 의장단회의] 참석</td>
+                                            <td>2016-05-21</td>
+                                            <td>박영자</td>
+                                            <td></td>
+                                            <td>457</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="pagination">
+                                    <li><a href="#"><img src="img/common/double_left_arrow.png" alt="첫 페이지로 이동"/></a></li>
+                                    <li><a href="#"><img src="img/common/left_arrow.png" alt="이전 페이지로 이동"/></a></li>
+                                    <li><a href="#" class="on">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                    <li><a href="#">10</a></li>
+                                    <li><a href="#"><img src="img/common/right_arrow.png" alt="다음 페이지로 이동"/></a></li>
+                                    <li><a href="#"><img src="img/common/double_right_arrow.png" alt="마지막 페이지로 이동"/></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="boardList">
+                            <div>
+                                <ul>
+                                    <li><a href="#"><img src="img/common/up_arrow.png" alt="이전 글로 이동"/>이전글</a></li>
+                                    <li><a href="#" class="tit">[제8회 KINU 서초포럼] 참석</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"><img src="img/common/down_arrow.png" alt="다음글로 이동"/>다음글</a></li>
+                                    <li><a href="#" class="tit">해당 게시물이 없습니다.</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+		</div>
+            <?php include 'include/subfooter.html'; ?>
+        
+            <?php include 'include/footer.html'; ?>
+        
+    </body>
+
+</html>
+
